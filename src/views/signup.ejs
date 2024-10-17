@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SexEd || signup</title>
+    <link href="./css/output.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: mintcream;
+      }
+
+      .hedbg {
+        background-color: rgba(255, 192, 203, 0.199);
+      }
+
+      .signup-form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 90px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 21px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="number"],
+      input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .lgnTtl {
+        font-family: "Noto Serif Oriya", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-screen h-80 flex hedbg">
+      <div
+        class="w-4/6 h-full flex justify-center items-center text-9xl text-blue-900"
+      >
+        SexEd
+      </div>
+      <div>
+        <img
+          src="/photos/logo new.d5e141aa6d6baf7751c5.png"
+          class="h-60"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="signup-form">
+        <p class="text-3xl mb-8 lgnTtl">Create a new Account</p>
+      <form action="/signup" method="post">
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+        /><br /><br />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required /><br /><br />
+
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="mobilenumber">Mobile Number:</label>
+        <input
+          type="tel"
+          id="mobilenumber"
+          name="mobilenumber"
+          required
+        /><br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <label for="gender">Gender:</label>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br />
+
+        <button type="submit">Signup</button><br /><br />
+        <p>Already have an account? <a href="/" class="text-blue-500">Log in</a></p>
+      </form>
+    </div>
+  </body>
+</html>
